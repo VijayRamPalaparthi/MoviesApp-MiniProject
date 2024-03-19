@@ -21,6 +21,12 @@ class SearchRoute extends Component {
     }
   }
 
+  onKeyPress = event => {
+    if (event.key === 'Enter') {
+      this.getSearchedMovies()
+    }
+  }
+
   onClickSearchButton = () => {
     this.getSearchedMovies()
   }
@@ -145,6 +151,7 @@ class SearchRoute extends Component {
           onChangeSearch={this.onChangeSearchText}
           search={this.onClickSearchButton}
           searchText={searchText}
+          onKeyPress={this.onKeyPress}
         />
         {this.switchSearchResult()}
       </div>

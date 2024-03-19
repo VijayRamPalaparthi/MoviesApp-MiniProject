@@ -72,6 +72,12 @@
   margin: 0px;
   background-color: transparent;
 }
+.search-button1 {
+  border: none;
+  cursor: pointer;
+  margin: 0px;
+  background-color: transparent;
+}
 .search-md {
   display: none;
 }
@@ -109,5 +115,10 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
+  }
+  .search-icon-md {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
   }
 }

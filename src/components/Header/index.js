@@ -10,6 +10,7 @@ const Header = props => {
     onChangeSearch,
     search,
     searchText,
+    onKeyPress,
   } = props
   const home = isHome ? 'header-name home-active' : 'header-name'
   const popular = isPopular ? 'header-name home-active' : 'header-name'
@@ -58,7 +59,11 @@ const Header = props => {
               onClick={search}
               testid="searchButton"
             >
-              <HiOutlineSearch size="20" color="#ffffff" />
+              <HiOutlineSearch
+                className="search-icon-md"
+                size="20"
+                color="#ffffff"
+              />
             </button>
           </Link>
 
@@ -79,10 +84,8 @@ const Header = props => {
             className="search"
             placeholder="Search"
             onChange={onChangeSearchInput}
+            onKeyPress={onKeyPress}
           />
-          <button className="search-button" type="button" onClick={search}>
-            <HiOutlineSearch size="15" color="#ffffff" />
-          </button>
         </div>
       )}
     </div>

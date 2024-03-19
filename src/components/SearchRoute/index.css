@@ -40,4 +40,7 @@
     width: 210px;
     height: 176px;
   }
+  .no-result-text {
+    font-size: 12px;
+  }
 }

@@ -18,7 +18,7 @@ const AccountSection = props => {
         <div className="membership-container">
           <p className="account-description">Member ship:</p>
           <div className="user-details-container">
-            <p className="account-details">rahul@gmail.com</p>
+            <p className="account-details">vijayram@gmail.com</p>
             <p className="account-password">Password : ************</p>
           </div>
         </div>
